@@ -1,4 +1,4 @@
-# -->> KAZNA API
+# KAZNA API
 <show-structure for="chapter,procedure" depth="3"/>
 
 > Для получения полных данных по результатам поиска от всех источников необходимо
