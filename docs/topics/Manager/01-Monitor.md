@@ -6,18 +6,21 @@
 
 <table>
 <tr><td>Блок</td><td>Описание</td></tr>
-<tr><td><img src="stadia_1_control_blue.png" alt="stadia_1_control_blue" width="189"/></td><td>2</td>/tr>
+<tr><td><img src="stadia_1_control_blue.png" alt="stadia_1_control_blue" width="189"/></td><td>2</td></tr>
 <tr><td><img src="stadia_2_online_yellow.png" alt="stadia_2_online_yellow" width="189"/></td><td>5</td></tr>
-<tr><td><img src="stadia_3_aspirant_green.png" alt="stadia_3_aspirant_green" width="189"/></td><td>5</td></tr>
+
+[//]: # (<tr><td><img src="stadia_3_aspirant_green.png" alt="stadia_3_aspirant_green" width="189"/></td><td>5</td></tr>)
 <tr><td><img src="stadia_4_admission_green.png" alt="stadia_4_admission_green" width="189"/></td><td>5</td></tr>
 <tr><td><img src="stadia_5_connection_green.png" alt="stadia_5_connection_green" width="189"/></td><td>5</td></tr>
 <tr><td><img src="stadia_6_candidate_green.png" alt="stadia_6_candidate_green" width="189"/></td><td>5</td></tr>
 <tr><td><img src="stadia_7_payment_green.png" alt="stadia_7_payment_green" width="189"/></td><td>5</td></tr>
 <tr><td><img src="stadia_8_member_green.png" alt="stadia_8_member_green" width="189"/></td><td>5</td></tr>
-<tr><td><img src="stadia_9_aspirant_red.png" alt="stadia_9_aspirant_red" width="189"/></td><td>5</td></tr>
+
+[//]: # (<tr><td><img src="stadia_9_aspirant_red.png" alt="stadia_9_aspirant_red" width="189"/></td><td>5</td></tr>)
 <tr><td><img src="stadia_10_admission_red.png" alt="stadia_10_admission_red" width="189"/></td><td>5</td></tr>
-<tr><td><img src="stadia_11_connection_red.png" alt="stadia_11_connection_red" width="189"/></td><td>5</td></tr>
-<tr><td><img src="stadia_12_candidate_red.png" alt="stadia_12_candidate_red" width="189"/></td><td>5</td></tr>
+
+[//]: # (<tr><td><img src="stadia_11_connection_red.png" alt="stadia_11_connection_red" width="189"/></td><td>5</td></tr>)
+[//]: # (<tr><td><img src="stadia_12_candidate_red.png" alt="stadia_12_candidate_red" width="189"/></td><td>5</td></tr>)
 </table>
 
 <br>
