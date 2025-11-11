@@ -20,5 +20,5 @@
     <toc-element toc-title="Архитектура">
         <toc-element topic="API-documentation.md"/>
     </toc-element>
-    <toc-element topic="How-to.md"/>
+    <toc-element topic="KAZNA_API.md"/>
 </instance-profile>
