@@ -33,6 +33,8 @@
         <toc-element topic="Manager-Overview.md"/>
         <toc-element topic="Manager-Setup.md"/>
         <toc-element topic="Manager-Architecture.md"/>
+        <toc-element topic="Manager-Auth.md"/>
+        <toc-element topic="Manager-Hidden-Gems.md"/>
     </toc-element>
 
     <toc-element toc-title="Справочники">
