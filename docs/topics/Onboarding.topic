@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Добро пожаловать в Club Germes" id="Onboarding">
+
+    <section-starting-page>
+        <title>Club Germes Developer Onboarding</title>
+        <description>
+            Полное руководство по архитектуре, развертыванию и разработке платформы.
+        </description>
+
+        <spotlight>
+            <a href="Project-Structure.md" type="development" summary="Структура монорепозитория и микросервисов">Структура проекта</a>
+            <a href="Quick-Start.md" type="start" summary="Как запустить проект локально за 5 минут">Быстрый старт</a>
+        </spotlight>
+
+        <primary>
+            <title>Архитектура и Потоки</title>
+            <a href="Auth-Flow.md" summary="Как работает авторизация и сессии"/>
+            <a href="Event-Registration-Flow.md" summary="Разбор бизнес-процесса регистрации на событие"/>
+        </primary>
+
+        <secondary>
+            <title>Справочники</title>
+            <a href="API-Reference.md" summary="Описание API endpoints"/>
+            <a href="Database-Schema.md" summary="Схема базы данных PostgreSQL"/>
+            <a href="Business-Rules.md" summary="Неочевидные бизнес-правила и захардкоженные ID"/>
+        </secondary>
+
+    </section-starting-page>
+
+</topic>
