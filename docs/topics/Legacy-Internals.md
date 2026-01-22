@@ -12,32 +12,38 @@
 
 ### Основные методы
 
-Вместо моделей и сессий используются сырые SQL-запросы:
+Вместо моделей и сессий используются сырые SQL-запросы. Пример типичного обработчика:
 
 ```python
-# Получение контекста (обычно внутри ендпоинта)
-api = request.app
+from starlette.requests import Request
 
-# 1. Получение одной строки (возвращает dict-like Record)
-user = await api.pg.club.fetchrow(
-    "SELECT * FROM users WHERE id = $1", 
-    user_id
-)
+async def get_user_data(request: Request):
+    # Получение контекста (обычно внутри ендпоинта)
+    api = request.app
+    user_id = 100  # Пример ID
 
-# 2. Получение списка строк
-events = await api.pg.club.fetch(
-    "SELECT * FROM events WHERE active = $1",
-    True
-)
+    # 1. Получение одной строки (возвращает dict-like Record)
+    user = await api.pg.club.fetchrow(
+        "SELECT * FROM users WHERE id = $1", 
+        user_id
+    )
 
-# 3. Получение одного значения
-count = await api.pg.club.fetchval("SELECT count(*) FROM users")
+    # 2. Получение списка строк
+    events = await api.pg.club.fetch(
+        "SELECT * FROM events WHERE active = $1",
+        True
+    )
 
-# 4. Выполнение команды (без возврата данных)
-await api.pg.club.execute(
-    "UPDATE users SET active = $1 WHERE id = $2",
-    False, user_id
-)
+    # 3. Получение одного значения
+    count = await api.pg.club.fetchval("SELECT count(*) FROM users")
+
+    # 4. Выполнение команды (без возврата данных)
+    await api.pg.club.execute(
+        "UPDATE users SET active = $1 WHERE id = $2",
+        False, user_id
+    )
+    
+    return {"user": user, "count": count}
 ```
 
 ### Особенности `PgBank`
