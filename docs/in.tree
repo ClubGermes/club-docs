@@ -19,6 +19,10 @@
         <toc-element topic="Business-Rules.md"/>
     </toc-element>
 
+    <toc-element toc-title="Внутренности (Deep Dive)">
+        <toc-element topic="Legacy-Internals.md"/>
+    </toc-element>
+
     <toc-element toc-title="Справочники">
         <toc-element topic="API-Reference.md"/>
         <toc-element topic="Database-Schema.md"/>

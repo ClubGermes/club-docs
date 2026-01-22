@@ -11,7 +11,7 @@ club-platform/
 │   │   ├── club-api/         # Основной API (Legacy Core)
 │   │   ├── club-users/       # Сервис пользователей и авторизации
 │   │   ├── club-comments/    # Сервис комментариев
-│   │   ├── club-events/      # Новый сервис событий (временно отключен)
+│   │   ├── club-events/      # Целевая архитектура (Litestar + GraphQL)
 │   │   ├── club-gateway-m/   # API Gateway для мобильного приложения
 │   │   └── club-media/       # Сервис загрузки и обработки медиа
 │   ├── setup-all.sh          # Скрипт первоначальной настройки
@@ -19,7 +19,7 @@ club-platform/
 │
 ├── frontend/                 # Фронтенд-приложения
 │   ├── club-manager/         # Админ-панель (Svelte + Tauri)
-│   ├── club-client/          # Мобильное приложение (React Native / Expo) - *предположительно*
+│   ├── club-client/          # Мобильное приложение (React Native / Expo)
 │   └── ...
 │
 ├── infrastructure/           # Инфраструктура
@@ -40,6 +40,11 @@ club-platform/
 *   **Технологический стек:** Starlette, Uvicorn, asyncpg (или Tortoise ORM в новых сервисах).
 *   **Межсервисное взаимодействие:** Преимущественно HTTP REST.
 *   **База данных:** Единый инстанс PostgreSQL (разделение на схемы логическое).
+
+#### Статусы сервисов
+*   **club-api (Legacy):** Основной монолит, содержит большую часть бизнес-логики.
+*   **club-events (Target):** Новый сервис на Litestar/GraphQL. Находится в стадии активной разработки и миграции функционала из монолита.
+*   **club-gateway-m:** Точка входа для мобильного приложения (BFF).
 
 ### Frontend
 *   **club-manager:** Настольное приложение для менеджеров клуба (Svelte).

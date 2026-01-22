@@ -20,6 +20,7 @@
             <title>Архитектура и Потоки</title>
             <a href="Auth-Flow.md" summary="Как работает авторизация и сессии"/>
             <a href="Event-Registration-Flow.md" summary="Разбор бизнес-процесса регистрации на событие"/>
+            <a href="Legacy-Internals.md" summary="Как работает PgBank, PgQueue и старый код"/>
         </primary>
 
         <secondary>
