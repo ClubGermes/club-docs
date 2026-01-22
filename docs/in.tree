@@ -22,6 +22,11 @@
     <toc-element toc-title="Внутренности (Deep Dive)">
         <toc-element topic="Legacy-Internals.md"/>
         <toc-element topic="File-Storage.md"/>
+        <toc-element topic="Background-Tasks.md"/>
+    </toc-element>
+
+    <toc-element toc-title="Инфраструктура">
+        <toc-element topic="Deployment.md"/>
     </toc-element>
 
     <toc-element toc-title="Справочники">

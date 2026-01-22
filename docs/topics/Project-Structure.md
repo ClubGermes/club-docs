@@ -31,6 +31,48 @@ club-platform/
 └── docker-compose.yml        # Инфраструктура (Postgres, Redis)
 ```
 
+## Контекстная диаграмма (C4 Context)
+
+```mermaid
+C4Context
+    title System Context Diagram - Club Germes Platform
+
+    Person(client, "Club Member", "Мобильное приложение (iOS/Android)")
+    Person(manager, "Club Manager", "Веб-админка")
+
+    System_Boundary(club_system, "Club Platform Monorepo") {
+        System(gateway, "API Gateway", "Auth, Routing, User Context")
+        System(legacy_api, "Club API (Legacy)", "Core logic, Users, Chat, Feed")
+        System(events_api, "Club Events (New)", "Events Management, GraphQL")
+    }
+
+    System_Ext(db, "Yandex Managed PostgreSQL", "Main Database")
+    System_Ext(redis, "Redis", "Sessions, Cache, Pub/Sub")
+    System_Ext(s3, "Yandex Object Storage", "Backups & Logs")
+    System_Ext(fs, "Local File System", "Media Storage (Legacy)")
+
+    System_Ext(sms_gate, "Beeline A2P", "SMS Sending")
+    System_Ext(firebase, "Firebase (FCM)", "Push Notifications")
+    System_Ext(telegram, "Telegram API", "Bot Notifications")
+    System_Ext(mail_gate, "Club Mail Service", "Internal SMTP Relay")
+
+    Rel(client, gateway, "Uses", "HTTPS/REST")
+    Rel(manager, gateway, "Uses", "HTTPS/REST")
+
+    Rel(gateway, legacy_api, "Proxies", "HTTP")
+    Rel(gateway, events_api, "Proxies", "HTTP")
+
+    Rel(legacy_api, db, "Reads/Writes", "asyncpg")
+    Rel(events_api, db, "Reads/Writes", "TortoiseORM")
+    Rel(legacy_api, redis, "Auth/Cache", "aioredis")
+
+    Rel(legacy_api, sms_gate, "Sends SMS", "HTTP")
+    Rel(legacy_api, firebase, "Sends Pushes", "HTTP")
+    Rel(legacy_api, telegram, "Sends Messages", "HTTP")
+    Rel(legacy_api, mail_gate, "Sends Emails", "HTTP")
+    Rel(legacy_api, fs, "Stores Avatars/Images", "File I/O")
+```
+
 ## Ключевые компоненты
 
 ### Backend
