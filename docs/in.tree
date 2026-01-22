@@ -29,6 +29,12 @@
         <toc-element topic="Deployment.md"/>
     </toc-element>
 
+    <toc-element toc-title="Фронтенд (Manager)">
+        <toc-element topic="Manager-Overview.md"/>
+        <toc-element topic="Manager-Setup.md"/>
+        <toc-element topic="Manager-Architecture.md"/>
+    </toc-element>
+
     <toc-element toc-title="Справочники">
         <toc-element topic="API-Reference.md"/>
         <toc-element topic="Database-Schema.md"/>
