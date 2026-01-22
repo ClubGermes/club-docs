@@ -15,12 +15,10 @@
 Вместо моделей и сессий используются сырые SQL-запросы. Пример типичного обработчика:
 
 ```python
-from starlette.requests import Request
-
-async def get_user_data(request: Request):
-    # Получение контекста (обычно внутри ендпоинта)
+async def get_user_data(request):
+    # Получение контекста (обычно доступен через request.app)
     api = request.app
-    user_id = 100  # Пример ID
+    user_id = 100 
 
     # 1. Получение одной строки (возвращает dict-like Record)
     user = await api.pg.club.fetchrow(
