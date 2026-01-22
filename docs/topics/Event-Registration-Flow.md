@@ -2,6 +2,45 @@
 
 В этом документе описывается путь данных от нажатия кнопки "Пойду" в мобильном приложении до записи в базу данных PostgreSQL.
 
+## Диаграмма последовательности
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor User as Mobile App (Client)
+    participant GW as Gateway (BFF)
+    participant API as Club API (Legacy)
+    participant DB as PostgreSQL
+    participant Worker as Notification Worker
+
+    User->>GW: POST /api/events/{id}/register
+    Note right of User: Header: Authorization <token>
+    
+    rect rgb(240, 240, 240)
+        note right of GW: Auth Middleware
+        GW->>GW: Validate Session (Redis)
+        GW->>GW: Extract User ID
+    end
+    
+    GW->>API: POST /internal/events/{id}/join (X-User-ID)
+    
+    API->>DB: Check Event Status & Slots
+    alt Event Full
+        API-->>User: 409 Conflict (Sold Out)
+    else Success
+        API->>DB: INSERT INTO events_users (audit=0)
+        DB-->>API: Success
+        
+        par Async Notifications
+            API->>DB: NOTIFY "events" payload
+            DB->>Worker: Trigger PgQueue
+            Worker->>User: Send Push "You are registered"
+        end
+        
+        API-->>User: 200 OK {status: "registered"}
+    end
+```
+
 ## 1. Инициирование запроса (Mobile App)
 
 Пользователь нажимает "Записаться" на экране события.
