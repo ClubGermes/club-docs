@@ -838,7 +838,7 @@ collector.get([ [eventsFeedHandler, { ...params }] ]);
 
 | Шаг 1: Ввод данных | Шаг 2: Ввод кода |
 |---|---|
-| ![Login Phone](auth-login-step1-phone.png) { width="200" } | *(Скриншот ввода кода)* |
+| ![Login Phone](auth-login-step1-phone.png) { width="150" } | *(Скриншот ввода кода)* |
 
 1.  Пользователь вводит номер или Email.
 2.  Нажимает **"Получить код"**.
