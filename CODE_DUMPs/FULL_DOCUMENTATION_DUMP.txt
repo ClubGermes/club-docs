@@ -949,7 +949,7 @@ collector.get([ [eventsFeedHandler, { ...params }] ]);
 
 Использование `XMLHttpRequest` в 2025 году (в файле `src/helpers/request.ts`) — архаизм. В среде Capacitor (WebView) `fetch` работает нативно и более эффективно. Рекомендуется рефакторинг.
 --- FILE: docs/topics/Mobile-Main.md ---
-# Функциональные возможности (Mobile)
+# Основные Экраны и Функции
 
 Детальный разбор ключевых экранов и функций мобильного приложения для резидентов.
 
