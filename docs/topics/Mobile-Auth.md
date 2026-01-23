@@ -11,7 +11,7 @@
 
 | Шаг 1: Ввод данных | Шаг 2: Ввод кода |
 |---|---|
-| ![Login Phone](mobile/auth/auth-login-step1-phone.png) { width="200" } | *(Скриншот ввода кода)* |
+| ![Login Phone](auth-login-step1-phone.png) { width="200" } | *(Скриншот ввода кода)* |
 
 1.  Пользователь вводит номер или Email.
 2.  Нажимает **"Получить код"**.
@@ -22,7 +22,7 @@
 ### 2. Вход по паролю
 Используется администраторами или пользователями, установившими пароль в профиле.
 
-![Login Password](mobile/auth/auth-login-step1-password.png) { width="200" }
+![Login Password](auth-login-step1-password.png) { width="200" }
 
 *   Вызывается метод `POST /login`.
 *   Токен доступа сохраняется в `localStorage` с ключом `___:token`.
@@ -31,7 +31,7 @@
 
 Реализован в `src/views/Registration/Registration.svelte`. Это единая длинная форма для первичного сбора данных о резиденте.
 
-![Registration Screen](mobile/auth/auth-registration-form.png) { width="200" }
+![Registration Screen](auth-registration-form.png) { width="200" }
 
 **Особенности процесса:**
 1.  **Двойная верификация:** Пользователь должен подтвердить и Email, и Телефон одновременно.
@@ -42,7 +42,7 @@
 
 При первом запуске приложение запрашивает права на отправку уведомлений.
 
-![Push Permission](mobile/auth/auth-push-notification-permission-prompt.png) { width="200" }
+![Push Permission](auth-push-notification-permission-prompt.png) { width="200" }
 
 *   **Логика:** `src/App.svelte` -> `setupFCM()`.
 *   **Регистрация:** FCM-токен устройства отправляется на бэкенд через `POST /register/device`.
