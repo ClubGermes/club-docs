@@ -39,6 +39,7 @@
 
     <toc-element toc-title="Фронтенд (Mobile)">
         <toc-element topic="Mobile-Overview.md"/>
+        <toc-element topic="Mobile-Features.md"/>
         <toc-element topic="Mobile-Setup.md"/>
         <toc-element topic="Mobile-Architecture.md"/>
         <toc-element topic="Mobile-Auth.md"/>
