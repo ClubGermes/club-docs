@@ -11,6 +11,7 @@
 | **Core** | **Svelte** | 4.x | Основной UI-фреймворк. |
 | **Build Tool** | **Vite** | 5.x | Сборщик и Dev-сервер. |
 | **Language** | **TypeScript** | 5.x | Строгая типизация. |
+| **Desktop Runtime** | **Tauri** | 2.0 (Beta) | Обертка для создания нативных приложений (macOS, Windows, Linux). |
 | **Mobile Runtime** | **Capacitor** | 7.x | (Опционально) Возможность сборки под Android/iOS. |
 | **Styling** | **TailwindCSS** | 3.x | Утилитарные классы. |
 | **UI Kit** | **DaisyUI** | 4.x | Компоненты поверх Tailwind (тема `emerald`). |
@@ -23,3 +24,13 @@
 *   **State Management:** Нативные **Svelte Stores** (`writable`, `readable`, `derived`).
 *   **Charts:** `chart.js` + `chartjs-plugin-datalabels` для аналитики и воронок продаж.
 *   **Date Picker:** `date-picker-svelte`.
+
+## Взаимодействие с ОС (Tauri)
+
+Приложение использует Tauri API для взаимодействия с операционной системой:
+*   **Shell:** Для открытия ссылок в браузере по умолчанию.
+*   **Notification:** Нативные уведомления ОС.
+*   **Window:** Управление окнами (размеры, полноэкранный режим).
+*   **Updater:** (В планах/частично) Механизм обновлений.
+
+> **Важно:** Проект находится в стадии миграции на Tauri 2.0 Beta, что может вызывать несовместимость с некоторыми плагинами версии 1.x.

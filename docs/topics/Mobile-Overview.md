@@ -1,16 +1,17 @@
 # Club Client: Обзор и Стек
 
-⚠️ **Важно:** Это приложение **не является** React Native проектом. Это **Hybrid Application**, написанное на **Svelte 4**, которое рендерится в системном WebView с помощью **Capacitor**.
+⚠️ **Важно:** Вопреки первоначальным ожиданиям, это приложение **не является** React Native проектом.
+Это **Hybrid Application**, написанное на **Svelte 4**, которое рендерится в системном WebView с помощью **Capacitor**.
 
 ## Технологический стек
 
 | Слой | Технология | Версия | Описание |
 |---|---|---|---|
-| **UI Framework** | **Svelte** | 4.x | Реактивный компонентный фреймворк. |
-| **Runtime** | **Capacitor** | 7.x | Мост к нативным API (iOS/Android). |
-| **Build Tool** | **Vite** | 5.x | Сборщик проекта. |
-| **Language** | **TypeScript** | 5.x | Строгая типизация. |
-| **Styling** | **TailwindCSS** | 3.x | + DaisyUI для UI-кита. |
+| **UI Framework** | **Svelte** | 4.2.19 | Реактивный компонентный фреймворк. |
+| **Runtime** | **Capacitor** | 7.0.0 | Мост к нативным API (iOS/Android). |
+| **Build Tool** | **Vite** | 5.4.19 | Сборщик проекта. |
+| **Language** | **TypeScript** | 5.5.3 | Строгая типизация. |
+| **Styling** | **TailwindCSS** | 3.4 | + DaisyUI для UI-кита. |
 | **Updates** | **Capgo** | 7.x | OTA (Over-the-Air) обновления без пересборки в сторы. |
 
 ## Основные библиотеки
