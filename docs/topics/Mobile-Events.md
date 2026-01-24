@@ -5,10 +5,9 @@
 
 Основной раздел для навигации по календарю мероприятий Клуба. Позволяет просматривать расписание, фильтровать события по типам и переходить к регистрации.
 
-<div style="display: flex; gap: 10px;">
-  <img src="events-calendar-off.png" alt="Events List" width="300" />
-  <img src="events-calendar-on.png" alt="Full Calendar" width="300" />
-</div>
+| Список | Календарь |
+|---|---|
+| ![Events List](events-calendar-off.png) { width="300" } | ![Full Calendar](events-calendar-on.png) { width="300" } |
 
 ### 1. Структура интерфейса
 
