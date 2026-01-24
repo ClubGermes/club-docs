@@ -57,12 +57,12 @@
 
 ```typescript
 // Пример конфигурации формата
-{
+const eventConfig = {
     format: 'tender',
     name: 'Тендерный разбор',
     color: 'primary brightness-90', // Используются utility-классы
     icon: '<svg...>' // Векторная иконка
-}
+};
 ```
 
 ---
