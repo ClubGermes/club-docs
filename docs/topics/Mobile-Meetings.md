@@ -72,10 +72,10 @@
 const users = list[i].users.filter(u => {
     if (archive) {
         // В архив попадают только состоявшиеся встречи (state == true)
-        if (u.connection.state) { ... }
+        if (u.connection.state) { return true; }
     } else {
         // В назначенные попадают несостоявшиеся (предстоящие)
-        if (!u.connection.state) { ... }
+        if (!u.connection.state) { return true; }
     }
 });
 ```
