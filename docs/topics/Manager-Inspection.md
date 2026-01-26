@@ -261,8 +261,10 @@ dataUsers.forEach(u => {
     const log = dataUsersLog[u.id.toString()];
     
     // Блок 0: Соискатель 3 дн.
-    if (u.membership.stage == 1 && t3 > log[log.length - 1].time && ...)
+    if (u.membership.stage == 1 && t3 > log[log.length - 1].time) {
+        // ... дополнительные проверки
         temp[0].push(u);
+    }
     
     // ... остальные блоки
 });
