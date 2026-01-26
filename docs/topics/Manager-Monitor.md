@@ -1,6 +1,6 @@
 # 📊 Менеджер: Монитор (Dashboard)
 
-**Код:** `Home.svelte` ([`frontend/club-manager/src/views/Home.svelte`](../../../frontend/club-manager/src/views/Home.svelte))  
+**Код:** `Home.svelte` (frontend/club-manager/src/views/Home.svelte)  
 **Роут:** `/home` (Layout: `Main`)
 
 ## Назначение
@@ -27,7 +27,10 @@
 
 ### Статистика (KPI)
 В верхнем правом углу отображается виджет "Новые клиенты" (Всего / Месяц / Неделя / Вчера).
+
 ![KPI Widget](../images/manager/monitor/new_clients.png)
+{width="200"}
+
 *   **Query:** `clientsStats` (`src/queries/stats.ts`).
 *   **Эндпоинт:** `/ma/stats/clients/new`.
 
@@ -35,30 +38,39 @@
 
 ## Логика фильтрации (createMonitor)
 
-Функция `createMonitor()` распределяет пользователей по бакетам.
+Функция `createMonitor()` в `Home.svelte` — это ядро логики этого экрана. Она перебирает массив пользователей и распределяет их по **бакетам (buckets)** на основе состояния.
 
-### Группы отображения
+### Группы отображения (Слева направо, сверху вниз)
 
 1.  **Контроль (Time Control)**
-    ![Time Control](../images/manager/monitor/stadia_1_control_blue.png)
+    ![Time Control](../images/manager/monitor/stadia_1_control_blue.png) {width="150"}
     *   *Условие:* `u.membership.semaphore[1].data.time_control` установлен.
-    *   *UI:* Синяя плашка.
+    *   *UI:* Синяя плашка с заголовком "Контроль".
+    *   *Сортировка:* По дате контроля.
 
 2.  **Контроль Руководителя (Chief Control)**
     *   *Условие:* `u.membership.semaphore[1].data.time_chief_control` установлен.
-    *   *UI:* Голубая плашка.
+    *   *UI:* Голубая плашка "Контроль рук.".
 
-3.  **Стадии воронки**
-    *   ![Admission](../images/manager/monitor/stadia_4_admission_green.png) **Адмиссия** (Стадия 2)
-    *   ![Connection](../images/manager/monitor/stadia_5_connection_green.png) **Подключение** (Стадия 3)
-    *   ![Candidate](../images/manager/monitor/stadia_6_candidate_green.png) **Кандидат** (Стадия 4)
-    *   ![Payment](../images/manager/monitor/stadia_7_payment_green.png) **Оплата** (Стадия 5)
-    *   ![Member](../images/manager/monitor/stadia_8_member_green.png) **Член клуба** (Стадия 6)
+3.  **Стадии воронки (monitor.stages)**
+    *   *Условие:* Пользователь находится в стадии (0-6) и **НЕ** имеет флагов `rejection` (отказ) или `postopen` (отложен).
+    *   *Стадии:*
+        *   **0** — У агента
+        *   **1** — Соискатель
+        *   **2** — ![Admission](../images/manager/monitor/stadia_4_admission_green.png) {width="150"} **Адмиссия**
+        *   **3** — ![Connection](../images/manager/monitor/stadia_5_connection_green.png) {width="150"} **Подключение**
+        *   **4** — ![Candidate](../images/manager/monitor/stadia_6_candidate_green.png) {width="150"} **Кандидат**
+        *   **5** — ![Payment](../images/manager/monitor/stadia_7_payment_green.png) {width="150"} **Оплата**
+        *   **6** — ![Member](../images/manager/monitor/stadia_8_member_green.png) {width="150"} **Член клуба**
+    *   *UI:* Зеленые заголовки.
 
-4.  **Просрочка (Outdated)**
-    ![Outdated](../images/manager/monitor/stadia_10_admission_red.png)
-    *   *Условие:* `stage.time < today`.
-    *   *UI:* Кнопка с красной обводкой.
+4.  **Просрочка (monitor.stagesOutdated)**
+    ![Outdated](../images/manager/monitor/stadia_10_admission_red.png) {width="150"}
+    *   *Условие:* `stage.time < today` (время нахождения на стадии истекло).
+    *   *UI:* Кнопка с красной обводкой "Просрочка".
+
+5.  **Отказ / Отложенные**
+    *   Отображаются, если включены соответствующие фильтры.
 
 ---
 
@@ -67,31 +79,32 @@
 Панель управления находится над сеткой карточек.
 
 ![Base Filters](../images/manager/monitor/filters_base.png)
+{style="block"}
 
 | Элемент | Иконка / UI | Описание логики |
 | :--- | :--- | :--- |
-| **Менеджеры** | ![Managers](../images/manager/monitor/select_manager.png) | Dropdown. Фильтрует по `community_manager_id`. |
-| **Агенты** | ![Agents](../images/manager/monitor/select_agent.png) | Dropdown. Фильтрует по `agent_id`. |
-| **Комментарии** | ![Comments](../images/manager/monitor/select_comments.png) | Фильтр по давности последнего комментария. |
-| **Чекбоксы** | ![Filter Check](../images/manager/monitor/1.png) ![Filter Check True](../images/manager/monitor/1.1.png) | Фильтрация по статусу проверки (control). |
+| **Менеджеры** | ![Managers](../images/manager/monitor/select_manager.png) {width="100"} | Dropdown. Фильтрует по `community_manager_id`. |
+| **Агенты** | ![Agents](../images/manager/monitor/select_agent.png) {width="100"} | Dropdown. Фильтрует по `agent_id`. |
+| **Комментарии** | ![Comments](../images/manager/monitor/select_comments.png) {width="100"} | Фильтр по давности последнего комментария. |
+| **Чекбоксы** | ![Check](../images/manager/monitor/1.png) {width="24"} ![True](../images/manager/monitor/1.1.png) {width="24"} | Фильтрация по статусу проверки (control). |
 
 ### Логика чекбоксов (Visual Guide)
 
 *   **Просрочка (Delay):**
-    *   ![False](../images/manager/monitor/5.png) Выключено: `filter.delay` = false
-    *   ![True](../images/manager/monitor/5.1.png) Включено: `filter.delay` = true
+    *   ![False](../images/manager/monitor/5.png) {width="24"} Выключено: `filter.delay` = false
+    *   ![True](../images/manager/monitor/5.1.png) {width="24"} Включено: `filter.delay` = true
 
 *   **У агента (Stage 0):**
-    *   ![False](../images/manager/monitor/6.png) Выключено
-    *   ![True](../images/manager/monitor/6.1.png) Включено
+    *   ![False](../images/manager/monitor/6.png) {width="24"} Выключено
+    *   ![True](../images/manager/monitor/6.1.png) {width="24"} Включено
 
 *   **Отложен (Post):**
-    *   ![False](../images/manager/monitor/7.png) Выключено
-    *   ![True](../images/manager/monitor/7.1.png) Включено
+    *   ![False](../images/manager/monitor/7.png) {width="24"} Выключено
+    *   ![True](../images/manager/monitor/7.1.png) {width="24"} Включено
 
 *   **Отказ (Reject):**
-    *   ![False](../images/manager/monitor/8.png) Выключено
-    *   ![True](../images/manager/monitor/8.1.png) Включено
+    *   ![False](../images/manager/monitor/8.png) {width="24"} Выключено
+    *   ![True](../images/manager/monitor/8.1.png) {width="24"} Включено
 
 ---
 
