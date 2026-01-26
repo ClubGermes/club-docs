@@ -8,7 +8,9 @@
 Основная задача: отображать оперативные задачи (Контроль) и распределение клиентов по стадиям воронки продаж.
 
 > **Визуализация UI**
-> ![Dashboard](../images/manager/monitor/dashboard-main.png)
+
+![Dashboard](../images/manager/monitor/dashboard-main.png)
+{style="block"}
 
 ---
 
