@@ -1,6 +1,6 @@
 # 📊 Менеджер: Монитор (Dashboard)
 
-**Код:** [`Home.svelte`](../../../frontend/club-manager/src/views/Home.svelte)  
+**Код:** `Home.svelte` (frontend/club-manager/src/views/Home.svelte)  
 **Роут:** `/home` (Layout: `Main`)
 
 ## Назначение
@@ -29,7 +29,7 @@
 В верхнем правом углу отображается виджет "Новые клиенты" (Всего / Месяц / Неделя / Вчера).
 
 ![KPI Widget](../images/manager/monitor/new_clients.png)
-{width="200"}
+{width="200" style="block"}
 
 *   **Query:** `clientsStats` (`src/queries/stats.ts`).
 *   **Эндпоинт:** `/ma/stats/clients/new`.
@@ -44,7 +44,8 @@
 ### Группы отображения (Слева направо, сверху вниз)
 
 #### Контроль (Time Control)
-![Time Control](../images/manager/monitor/stadia_1_control_blue.png) {width="150"}
+![Time Control](../images/manager/monitor/stadia_1_control_blue.png)
+{width="150" style="block"}
 
 *   **Условие:** Установлен флаг `time_control` в `semaphore[1]` (Оценка менеджера).
 *   **UI:** Синяя плашка с заголовком "Контроль".
@@ -59,14 +60,25 @@
 *   **Стадии:**
     *   **0** — У агента (Красный)
     *   **1** — Соискатель (Серый)
-    *   **2** — ![Admission](../images/manager/monitor/stadia_4_admission_green.png) {width="150"} **Адмиссия**
-    *   **3** — ![Connection](../images/manager/monitor/stadia_5_connection_green.png) {width="150"} **Подключение**
-    *   **4** — ![Candidate](../images/manager/monitor/stadia_6_candidate_green.png) {width="150"} **Кандидат**
-    *   **5** — ![Payment](../images/manager/monitor/stadia_7_payment_green.png) {width="150"} **Оплата**
-    *   **6** — ![Member](../images/manager/monitor/stadia_8_member_green.png) {width="150"} **Член клуба**
+    *   **2** — **Адмиссия**
+        ![Admission](../images/manager/monitor/stadia_4_admission_green.png)
+        {width="150" style="block"}
+    *   **3** — **Подключение**
+        ![Connection](../images/manager/monitor/stadia_5_connection_green.png)
+        {width="150" style="block"}
+    *   **4** — **Кандидат**
+        ![Candidate](../images/manager/monitor/stadia_6_candidate_green.png)
+        {width="150" style="block"}
+    *   **5** — **Оплата**
+        ![Payment](../images/manager/monitor/stadia_7_payment_green.png)
+        {width="150" style="block"}
+    *   **6** — **Член клуба**
+        ![Member](../images/manager/monitor/stadia_8_member_green.png)
+        {width="150" style="block"}
 
 #### Просрочка (`monitor.stagesOutdated`)
-![Outdated](../images/manager/monitor/stadia_10_admission_red.png) {width="150"}
+![Outdated](../images/manager/monitor/stadia_10_admission_red.png)
+{width="150" style="block"}
 
 *   **Условие:** `stage.time < today`. Время нахождения на стадии превысило норматив.
 *   **UI:** Кнопка с красной обводкой названия стадии.
@@ -120,7 +132,7 @@
 
 ---
 
-## Технический долг и Особенности
+## 6. Технический долг и Особенности
 
 *   ⚠️ **Inline Rendering:** Код рендеринга карточки дублируется для каждой секции (Контроль, Стадии, Просрочка). Это усложняет поддержку UI — изменения нужно вносить в 3-4 места.
 *   ⚠️ **Heavy Client Logic:** Вся фильтрация и сортировка тысяч пользователей происходит в браузере. При увеличении базы могут возникнуть лаги при переключении фильтров.
