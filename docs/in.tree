@@ -44,6 +44,7 @@
         <toc-element topic="Mobile-Meetings.md"/>
         <toc-element topic="Mobile-Residents.md"/>
         <toc-element topic="Mobile-Communities.md"/>
+        <toc-element topic="Mobile-Partners.md"/>
         <toc-element topic="Mobile-Setup.md"/>
         <toc-element topic="Mobile-Architecture.md"/>
         <toc-element topic="Mobile-Auth.md"/>

@@ -10,7 +10,7 @@
 Основной сценарий для пользователей без пароля.
 
 **Шаг 1: Ввод данных**
-![Login Phone](auth-login-step1-phone.png) { width="300" }
+![Login Phone](auth-login-step1-phone.png) { width="200" }
 
 **Шаг 2: Ввод кода**
 *(Скриншот ввода кода)*
