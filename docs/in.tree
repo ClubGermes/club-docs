@@ -35,6 +35,7 @@
         <toc-element topic="Manager-Statistics.md"/>
         <toc-element topic="Manager-Conversion.md"/>
         <toc-element topic="Manager-Inspection.md"/>
+        <toc-element topic="Manager-Clients.md"/>
         <toc-element topic="Manager-Polls.md"/>
         <toc-element topic="Manager-Login.md"/>
         <toc-element topic="Manager-Setup.md"/>
