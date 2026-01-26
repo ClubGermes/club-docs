@@ -1,14 +1,14 @@
 # Главный экран
 <show-structure for="chapter,procedure,tab,def" depth="3"/>
 
-<img src="main_screen.png" alt="Login notification permission Ru" border-effect="line" thumbnail="true" width="220"/>
+<img src="legacy/client_screens/main_screen.png" alt="Login notification permission Ru" border-effect="line" thumbnail="true" width="220"/>
 
 ### Верхнее меню
 
 [//]: # (![top_menu.png]&#40;top_menu.png&#41;{ width="420"})
 
 #### Аватар пользователя
-![profile_ico.png](profile_ico.png){ width="100"}
+![profile_ico.png](legacy/client_ico/profile_ico.png){ width="100"}
 
 Переход на экран профиля пользователя.
 Бейдж со статусом пользователя.
@@ -28,8 +28,8 @@
 Переход в раздел "Уведомления
 
 ### События
-![calendar1.PNG](calendar1.PNG){ border-effect="line" style="block" thumbnail="true" width="220"}
-![calendar2.PNG](calendar2.PNG){ border-effect="line" style="block" thumbnail="true" width="220"}
+![calendar1.PNG](legacy/client_screens/calendar1.PNG){ border-effect="line" style="block" thumbnail="true" width="220"}
+![calendar2.PNG](legacy/client_screens/calendar2.PNG){ border-effect="line" style="block" thumbnail="true" width="220"}
 
 ### Опросы
 

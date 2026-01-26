@@ -1,4 +1,4 @@
-# 🤝 Раздел «Партнеры» (AI Partners)
+# 🤖 Раздел «Партнеры» (AI Partners)
 
 **Код:** `frontend/club-client/src/views/Partners/Partners.svelte`  
 **Роут:** `/partners`

@@ -15,11 +15,11 @@
 
 ## Вход
 ### Разрешение уведомлений {collapsible="true"}
-<img src="login_notification_prompt_ru.jpg" alt="Login notification permission Ru" border-effect="line" thumbnail="true" width="220"/>
+<img src="legacy/client_screens/login_notification_prompt_ru.jpg" alt="Login notification permission Ru" border-effect="line" thumbnail="true" width="220"/>
 
 
 ### Регистрация {collapsible="true"}
-![Само регистрация](self_registration.png){ border-effect="line" thumbnail="true" width="220"}
+![Само регистрация](legacy/client_screens/self_registration.png){ border-effect="line" thumbnail="true" width="220"}
 
 > Нерекомендуемый способ регистрации.
 > Предназначен только для того, чтобы выполнить требования магазинов приложений.
