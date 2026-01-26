@@ -32,6 +32,7 @@
     <toc-element toc-title="Фронтенд (Manager)">
         <toc-element topic="Manager-Overview.md"/>
         <toc-element topic="Manager-Monitor.md"/>
+        <toc-element topic="Manager-Statistics.md"/>
         <toc-element topic="Manager-Login.md"/>
         <toc-element topic="Manager-Setup.md"/>
         <toc-element topic="Manager-Architecture.md"/>
