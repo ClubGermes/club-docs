@@ -39,6 +39,7 @@
         <toc-element topic="Manager-Speakers.md"/>
         <toc-element topic="Manager-Events.md"/>
         <toc-element topic="Manager-Agents.md"/>
+        <toc-element topic="Manager-Log.md"/>
         <toc-element topic="Manager-Tracks.md"/>
         <toc-element topic="Manager-Polls.md"/>
         <toc-element topic="Manager-Login.md"/>
