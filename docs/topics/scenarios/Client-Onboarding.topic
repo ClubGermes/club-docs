@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Работа с резидентами" id="Client-Onboarding">
+
+    <p>Процесс сопровождения клиента: от заявки на вступление до разработки стратегии развития.</p>
+
+    <chapter title="1. Обработка заявки" id="application">
+        <p>Новые регистрации попадают в карантин.</p>
+        <list type="decimal">
+            <li>Модератор проверяет анкету в разделе <a href="Moderator-Applicants.md">Регистрации</a>.</li>
+            <li>При необходимости данные корректируются, присваивается статус (например, "Кандидат").</li>
+            <li>После утверждения пользователь попадает в общий список <a href="Moderator-Users.md">Пользователей</a>.</li>
+        </list>
+    </chapter>
+
+    <chapter title="2. Закрепление и Ведение" id="management">
+        <p>Менеджер подхватывает клиента.</p>
+        <list type="decimal">
+            <li>Клиент отображается в <a href="Manager-Clients.md">базе клиентов</a>.</li>
+            <li>Менеджер формирует <a href="Manager-Tracks.md">Трек развития</a> (стратегия, маркетинг, HR).</li>
+            <li>Для поиска контактов под запрос клиента используется <a href="Manager-Tags.md">Поиск по тегам</a>.</li>
+        </list>
+    </chapter>
+
+    <chapter title="3. Контроль активности" id="monitoring">
+        <list>
+            <li>Ежедневный контроль через <a href="Manager-Monitor.md">Монитор</a> (воронка продаж).</li>
+            <li>Просмотр истории действий в <a href="Manager-Log.md">Логе заходов</a>.</li>
+            <li>История коммуникации фиксируется в <a href="Manager-Comments.md">Логе комментариев</a>.</li>
+        </list>
+    </chapter>
+</topic>

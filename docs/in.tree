@@ -8,6 +8,12 @@
 
     <toc-element topic="Onboarding.topic"/>
     
+    <toc-element toc-title="📘 Сценарии работы (How-to)">
+        <toc-element topic="Event-Management.topic"/>
+        <toc-element topic="Client-Onboarding.topic"/>
+        <toc-element topic="Networking-Cycle.topic"/>
+    </toc-element>
+
     <toc-element toc-title="🚀 Введение">
         <toc-element topic="Project-Structure.md"/>
         <toc-element topic="Quick-Start.md"/>

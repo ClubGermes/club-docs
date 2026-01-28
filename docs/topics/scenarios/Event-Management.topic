@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Как организовать мероприятие" id="Event-Management">
+
+    <p>Полный цикл подготовки и проведения события в Клубе Гермес: от идеи до сбора обратной связи.</p>
+
+    <chapter title="1. Создание и Настройка" id="creation">
+        <p>Работа начинается в кабинете Модератора.</p>
+        <list type="decimal">
+            <li>Перейдите в раздел <a href="Moderator-Events.md">События (Модератор)</a>.</li>
+            <li>Создайте карточку мероприятия, заполните описание и загрузите обложку.</li>
+            <li>Настройте программу и добавьте спикеров через <a href="Moderator-Events.md" anchor="2-программа-и-спикеры">редактор программы</a>.</li>
+            <li>Если требуется, настройте <a href="Moderator-Dashboard.md">Витрину (Dashboard)</a> для вывода на экран во время ивента.</li>
+        </list>
+    </chapter>
+
+    <chapter title="2. Работа с участниками" id="participants">
+        <p>После анонса начинается регистрация. Менеджеры работают с потоком заявок.</p>
+        <list type="decimal">
+            <li>Отслеживайте регистрации в разделе <a href="Manager-Events.md">События (Менеджер)</a>.</li>
+            <li>Используйте <a href="Manager-Tags-Speakers.md">Поиск спикеров</a>, если нужно подобрать экспертов из резидентов.</li>
+            <li>Перед началом события отправьте напоминание через <a href="Moderator-Send.md">Рассылку</a>.</li>
+        </list>
+    </chapter>
+
+    <chapter title="3. Проведение (Check-in)" id="check-in">
+        <p>В день мероприятия:</p>
+        <list type="decimal">
+            <li>Включите <a href="Moderator-Dashboard.md">Дашборд</a> на большом экране.</li>
+            <li>Менеджеры на входе отмечают гостей через <a href="Manager-Events.md" anchor="режим-список-участников-и-аудит">Аудит и Чек-ин</a>.</li>
+            <li>Гости автоматически попадают в ротацию на Дашборде.</li>
+        </list>
+    </chapter>
+
+    <chapter title="4. Аналитика" id="analytics">
+        <p>После завершения:</p>
+        <list>
+            <li>Проверьте <a href="Manager-Satisfactions.md">Индекс встреч</a>, чтобы оценить качество нетворкинга.</li>
+            <li>Изучите <a href="Manager-Statistics.md">Статистику</a> посещаемости.</li>
+        </list>
+    </chapter>
+</topic>
