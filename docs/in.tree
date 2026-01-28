@@ -81,6 +81,7 @@
     </toc-element>
 
     <toc-element toc-title="🛡️ Кабинет Модератора">
+        <toc-element topic="Moderator-Overview.md"/>
         <toc-element toc-title="Управление доступом">
             <toc-element topic="Moderator-Auth.md"/>
             <toc-element topic="Moderator-Users.md"/>
