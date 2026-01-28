@@ -63,6 +63,7 @@
         <toc-element topic="Moderator-Monitor.md"/>
         <toc-element topic="Moderator-Events.md"/>
         <toc-element topic="Moderator-Dashboard.md"/>
+        <toc-element topic="Moderator-Users.md"/>
     </toc-element>
 
     <toc-element toc-title="Фронтенд (Mobile)">
