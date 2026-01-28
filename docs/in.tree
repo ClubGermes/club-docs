@@ -68,6 +68,7 @@
         <toc-element topic="Moderator-Communities.md"/>
         <toc-element topic="Moderator-Questions.md"/>
         <toc-element topic="Moderator-Polls.md"/>
+        <toc-element topic="Moderator-Goals.md"/>
     </toc-element>
 
     <toc-element toc-title="Фронтенд (Mobile)">
