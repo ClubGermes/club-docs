@@ -60,6 +60,7 @@
     </toc-element>
 
     <toc-element toc-title="Фронтенд (Moderator)">
+        <toc-element topic="Moderator-Monitor.md"/>
         <toc-element topic="Moderator-Events.md"/>
     </toc-element>
 
