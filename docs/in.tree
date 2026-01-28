@@ -119,9 +119,4 @@
         <toc-element topic="Mobile-Hidden-Gems.md"/>
     </toc-element>
 
-    <toc-element toc-title="Справочники">
-        <toc-element topic="API-Reference.md"/>
-        <toc-element topic="Database-Schema.md"/>
-    </toc-element>
-
 </instance-profile>
