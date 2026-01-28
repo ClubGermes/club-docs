@@ -8,76 +8,100 @@
 
     <toc-element topic="Onboarding.topic"/>
     
-    <toc-element toc-title="Гайд для новичка">
+    <toc-element toc-title="🚀 Введение">
         <toc-element topic="Project-Structure.md"/>
         <toc-element topic="Quick-Start.md"/>
         <toc-element topic="Auth-Flow.md"/>
     </toc-element>
 
-    <toc-element toc-title="Бизнес-процессы">
+    <toc-element toc-title="⚙️ Архитектура системы">
+        <toc-element topic="Architecture-Overview.md"/>
+        <toc-element topic="Database-Schema.md"/>
+        <toc-element topic="API-Reference.md"/>
+        <toc-element topic="Background-Tasks.md"/>
+        <toc-element topic="File-Storage.md"/>
+        <toc-element topic="Deployment.md"/>
+        <toc-element topic="Legacy-Internals.md"/>
         <toc-element topic="Event-Registration-Flow.md"/>
         <toc-element topic="Business-Rules.md"/>
     </toc-element>
 
-    <toc-element toc-title="Внутренности (Deep Dive)">
-        <toc-element topic="Legacy-Internals.md"/>
-        <toc-element topic="File-Storage.md"/>
-        <toc-element topic="Background-Tasks.md"/>
-    </toc-element>
-
-    <toc-element toc-title="Инфраструктура">
-        <toc-element topic="Deployment.md"/>
-    </toc-element>
-
-    <toc-element toc-title="Фронтенд (Manager)">
+    <toc-element toc-title="💼 Кабинет Менеджера">
         <toc-element topic="Manager-Overview.md"/>
-        <toc-element topic="Manager-Monitor.md"/>
-        <toc-element topic="Manager-Statistics.md"/>
-        <toc-element topic="Manager-Conversion.md"/>
-        <toc-element topic="Manager-Inspection.md"/>
-        <toc-element topic="Manager-Clients.md"/>
-        <toc-element topic="Manager-Speakers.md"/>
-        <toc-element topic="Manager-Events.md"/>
-        <toc-element topic="Manager-Agents.md"/>
-        <toc-element topic="Manager-Log.md"/>
-        <toc-element topic="Manager-Views.md"/>
-        <toc-element topic="Manager-Comments.md"/>
-        <toc-element topic="Manager-Satisfactions.md"/>
-        <toc-element topic="Manager-Notifications.md"/>
-        <toc-element topic="Manager-Suggestions.md"/>
-        <toc-element topic="Manager-Tags.md"/>
-        <toc-element topic="Manager-Tags-Speakers.md"/>
-        <toc-element topic="Manager-Connections.md"/>
-        <toc-element topic="Manager-Meetings.md"/>
-        <toc-element topic="Manager-Requests.md"/>
-        <toc-element topic="Manager-Tracks.md"/>
-        <toc-element topic="Manager-Polls.md"/>
-        <toc-element topic="Manager-Login.md"/>
-        <toc-element topic="Manager-Setup.md"/>
-        <toc-element topic="Manager-Architecture.md"/>
-        <toc-element topic="Manager-Auth.md"/>
-        <toc-element topic="Manager-Hidden-Gems.md"/>
+        
+        <toc-element toc-title="Аналитика и KPI">
+            <toc-element topic="Manager-Monitor.md"/>
+            <toc-element topic="Manager-Statistics.md"/>
+            <toc-element topic="Manager-Conversion.md"/>
+            <toc-element topic="Manager-Inspection.md"/>
+            <toc-element topic="Manager-Log.md"/>
+            <toc-element topic="Manager-Satisfactions.md"/>
+            <toc-element topic="Manager-Views.md"/>
+        </toc-element>
+
+        <toc-element toc-title="CRM и Клиенты">
+            <toc-element topic="Manager-Clients.md"/>
+            <toc-element topic="Manager-Tracks.md"/>
+            <toc-element topic="Manager-Agents.md"/>
+            <toc-element topic="Manager-Polls.md"/>
+        </toc-element>
+
+        <toc-element toc-title="Нетворкинг">
+            <toc-element topic="Manager-Connections.md"/>
+            <toc-element topic="Manager-Suggestions.md"/>
+            <toc-element topic="Manager-Meetings.md"/>
+            <toc-element topic="Manager-Requests.md"/>
+            <toc-element topic="Manager-Comments.md"/>
+            <toc-element topic="Manager-Notifications.md"/>
+        </toc-element>
+
+        <toc-element toc-title="Event-менеджмент">
+            <toc-element topic="Manager-Events.md"/>
+            <toc-element topic="Manager-Speakers.md"/>
+        </toc-element>
+
+        <toc-element toc-title="Поиск и Справочники">
+            <toc-element topic="Manager-Tags.md"/>
+            <toc-element topic="Manager-Tags-Speakers.md"/>
+        </toc-element>
+
+        <toc-element toc-title="Настройки и Техническое">
+            <toc-element topic="Manager-Auth.md"/>
+            <toc-element topic="Manager-Login.md"/>
+            <toc-element topic="Manager-Setup.md"/>
+            <toc-element topic="Manager-Architecture.md"/>
+            <toc-element topic="Manager-Hidden-Gems.md"/>
+        </toc-element>
     </toc-element>
 
-    <toc-element toc-title="Фронтенд (Moderator)">
-        <toc-element topic="Moderator-Auth.md"/>
-        <toc-element topic="Moderator-Monitor.md"/>
-        <toc-element topic="Moderator-Events.md"/>
-        <toc-element topic="Moderator-Dashboard.md"/>
-        <toc-element topic="Moderator-Users.md"/>
-        <toc-element topic="Moderator-Applicants.md"/>
-        <toc-element topic="Moderator-Communities.md"/>
-        <toc-element topic="Moderator-Questions.md"/>
-        <toc-element topic="Moderator-Polls.md"/>
-        <toc-element topic="Moderator-Goals.md"/>
-        <toc-element topic="Moderator-Tags.md"/>
-        <toc-element topic="Moderator-Tags1.md"/>
-        <toc-element topic="Moderator-Send.md"/>
-        <toc-element topic="Moderator-Log.md"/>
+    <toc-element toc-title="🛡️ Кабинет Модератора">
+        <toc-element toc-title="Управление доступом">
+            <toc-element topic="Moderator-Auth.md"/>
+            <toc-element topic="Moderator-Users.md"/>
+            <toc-element topic="Moderator-Applicants.md"/>
+            <toc-element topic="Moderator-Log.md"/>
+        </toc-element>
+
+        <toc-element toc-title="Контент и События">
+            <toc-element topic="Moderator-Monitor.md"/>
+            <toc-element topic="Moderator-Dashboard.md"/>
+            <toc-element topic="Moderator-Events.md"/>
+            <toc-element topic="Moderator-Communities.md"/>
+            <toc-element topic="Moderator-Questions.md"/>
+            <toc-element topic="Moderator-Polls.md"/>
+        </toc-element>
+
+        <toc-element toc-title="Справочники и Настройки">
+            <toc-element topic="Moderator-Tags.md"/>
+            <toc-element topic="Moderator-Tags1.md"/>
+            <toc-element topic="Moderator-Goals.md"/>
+            <toc-element topic="Moderator-Send.md"/>
+        </toc-element>
     </toc-element>
 
-    <toc-element toc-title="Фронтенд (Mobile)">
+    <toc-element toc-title="📱 Мобильное приложение">
         <toc-element topic="Mobile-Overview.md"/>
+        <toc-element topic="Mobile-Auth.md"/>
         <toc-element topic="Mobile-Main.md"/>
         <toc-element topic="Mobile-Events.md"/>
         <toc-element topic="Mobile-Meetings.md"/>
@@ -86,7 +110,6 @@
         <toc-element topic="Mobile-Partners.md"/>
         <toc-element topic="Mobile-Setup.md"/>
         <toc-element topic="Mobile-Architecture.md"/>
-        <toc-element topic="Mobile-Auth.md"/>
         <toc-element topic="Mobile-Hidden-Gems.md"/>
     </toc-element>
 
