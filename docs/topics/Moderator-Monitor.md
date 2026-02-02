@@ -57,3 +57,14 @@
     $: tagsKeys = Object.keys(tags).sort((a, b) => tags[b] - tags[a]);
     ```
     Это гарантирует перерисовку списка при обновлении данных.
+
+## См. также
+
+**Связанные модули:**
+*   [Dashboard](Moderator-Dashboard.md) — детальная статистика и аналитика
+*   [Log](Moderator-Log.md) — история входов и сессий пользователей
+*   [Users](Moderator-Users.md) — управление пользователями
+
+**Другие интерфейсы:**
+*   [Manager-Monitor](Manager-Monitor.md) — расширенный мониторинг в панели менеджера
+*   [Moderator Overview](Moderator-Overview.md) — обзор всех модулей модератора

@@ -48,3 +48,13 @@
 
 ### Особенности
 *   **Ограничения UI**: Чекбоксы Email и SMS имеют атрибут `disabled` в коде (`bind:checked="{flagEmail}" disabled`), что говорит о том, что в данный момент рассылка разрешена только через Push-канал.
+
+## См. также
+
+**Связанные модули:**
+*   [Users](Moderator-Users.md) — управление получателями рассылок
+*   [Events](Moderator-Events.md) — уведомления о событиях
+*   [Monitor](Moderator-Monitor.md) — отслеживание доставки уведомлений
+
+**Другие интерфейсы:**
+*   [Moderator Overview](Moderator-Overview.md) — обзор всех модулей модератора

@@ -1,7 +1,7 @@
-# 🛤️ Менеджер: Трек (Tracks)
+# 🛤️ Менеджер: Треки (Tracks)
 
-**Код:** `User.svelte` (логика Drawer `prompts2`), `Bundle.svelte` (View `/bundle`) (frontend/club-manager/src/views/)  
-**Роут:** `/bundle` (Layout: `Main`)
+**Код:** `frontend/club-manager/src/views/Tracks.svelte`  
+**Роут:** `/tracks` и `/tracks/:id` (Layout: `Main`)
 
 Модуль **Трек** разделен на две функциональные части:
 1.  **Журнал отправок (`/bundle`)**: Обзор истории коммуникаций.
