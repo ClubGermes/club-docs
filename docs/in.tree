@@ -47,7 +47,7 @@
 
         <toc-element toc-title="CRM и Клиенты">
             <toc-element topic="Manager-Clients.md"/>
-            <toc-element topic="Manager-Tracks.md"/>
+            <toc-element topic="Manager-Goals.md"/>
             <toc-element topic="Manager-Agents.md"/>
             <toc-element topic="Manager-Polls.md"/>
         </toc-element>
@@ -69,6 +69,10 @@
         <toc-element toc-title="Поиск и Справочники">
             <toc-element topic="Manager-Tags.md"/>
             <toc-element topic="Manager-Tags-Speakers.md"/>
+        </toc-element>
+
+        <toc-element toc-title="AI и Автоматизация">
+            <toc-element topic="Manager-AI-Bundle.md"/>
         </toc-element>
 
         <toc-element toc-title="Настройки и Техническое">
